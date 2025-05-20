@@ -130,7 +130,7 @@ export default function ElegantCta() {
       initial="hidden"
       animate={controls}
       variants={containerVariants}
-      className="w-full py-16 md:py-24 mx-auto my-12 max-w-[1400px] relative overflow-hidden"
+      className="w-full py-16 md:py-24 mx-auto my-12 max-w-7xl px-4 sm:px-6 lg:px-8 relative overflow-hidden"
     >
       {/* Animated background pattern */}
       <motion.div
@@ -158,7 +158,7 @@ export default function ElegantCta() {
               variants={itemVariants}
               className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-white drop-shadow-md max-w-3xl"
             >
-              Experience the <span className="text-yellow-300">#1</span> Kangkong Chips Today
+              Experience the dsfasdfa<span className="text-yellow-300">#1</span> Kangkong Chips Today
             </motion.h2>
 
             <motion.p variants={itemVariants} className="max-w-[800px] text-green-50 md:text-xl/relaxed">
@@ -176,7 +176,7 @@ export default function ElegantCta() {
               >
                 <Button
                   size="lg"
-                  className="bg-white text-green-600 hover:bg-green-50 font-bold py-7 px-8 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl flex items-center gap-3 overflow-hidden group"
+                  className="bg-white max-md:grid max-md:grid-cols-2 text-green-600 hover:bg-green-50 font-bold py-7 px-8 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl flex items-center gap-3 overflow-hidden group"
                 >
                   <ShoppingCart className="h-5 w-5 transition-transform duration-300 group-hover:-translate-x-1" />
                   <span>Shop Now</span>
@@ -228,7 +228,7 @@ export default function ElegantCta() {
 
             <motion.div
               variants={statsContainerVariants}
-              className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-4 w-full max-w-3xl"
+              className="mt-12 grid grid-cols-3 sm:grid-cols-3 gap-8 sm:gap-4 w-full max-w-3xl"
             >
               {stats.map((stat, index) => (
                 <motion.div key={index} variants={statItemVariants} className="flex flex-col items-center relative">

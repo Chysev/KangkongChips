@@ -158,8 +158,12 @@ export default function ElegantProducts() {
 
   return (
     <section ref={sectionRef} className="relative w-full py-16 md:py-28 overflow-hidden bg-gradient-to-b from-white to-green-50">
-      <div className="absolute -bottom-0 right-0 w-[200px] hover:animate-bounce z-49 -rotate-25">
-        <img src="/featureImage.png" alt="featureImage" />
+
+      <div className="max-md:hidden">
+
+        <div className="absolute -bottom-0 right-0 w-[200px] hover:animate-bounce z-49 -rotate-25">
+          <img src="/featureImage.png" alt="featureImage" />
+        </div>
       </div>
       <div className="container px-4 md:px-6 mx-auto">
         <div ref={headingRef} className="flex flex-col items-center justify-center space-y-4 text-center mb-16">

@@ -33,12 +33,12 @@ export default function Features() {
   ]
 
   return (
-    <section className="w-full py-12 md:py-24 bg-green-50 relative">
+    <section className=" py-12 md:py-24 bg-green-50 relative w-full mx-auto">
 
       <div className="absolute -bottom-30 left-0 w-[200px] hover:animate-bounce z-49 rotate-25">
         <img src="/featureImage.png" alt="featureImage" />
       </div>
-      <div className="absolute top-0 right-[-50] w-[500px]  z-0  -rotate-25">
+      <div className="absolute top-30 right-20 w-[500px]  z-0  -rotate-25">
         <img src="/featureImage.png" alt="featureImage" className="blur-lg" />
       </div>
       <div className="container px-4 md:px-6">

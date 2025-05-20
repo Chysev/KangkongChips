@@ -5,6 +5,9 @@ import Products from "@/components/products"
 import Cta from "@/components/cta"
 import Footer from "@/components/footer"
 import BusinessOpportunity from "@/components/business-opportunity"
+import { TestimonialsMarquee } from "@/components/testimonials-3d"
+// import Testimonials from "@/components/testimonials"
+
 
 export default function Home() {
   return (
@@ -17,6 +20,8 @@ export default function Home() {
         <Features />
         <Products />
         <BusinessOpportunity />
+        <TestimonialsMarquee />
+        {/* <Testimonials /> */}
         <Cta />
       </main>
 

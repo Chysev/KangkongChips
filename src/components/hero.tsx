@@ -165,7 +165,33 @@ export default function Hero() {
 
   return (
     <section ref={heroRef} className="relative w-full py-12 md:py-24 bg-white overflow-hidden">
-      <div className="absolute top-0 left-[200]">
+      <div className="max-md:hidden">
+        <div className="absolute top-0 md:left-[200] left-50 ">
+          <motion.img initial={{ y: -20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 0.1 }}
+
+            src="/animationLogo.png"
+            alt="Kangkong Chips"
+            width={100}
+            height={100}
+            className="w-[200px]"
+          />
+        </div>
+      </div>
+
+      <div className="max-md:hidden">
+        <div className="absolute top-0 md:right-[100] z-48 ">
+          <motion.img initial={{ y: -20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 0.1 }}
+
+            src="/animationLogo.png"
+            alt="Kangkong Chips"
+            width={100}
+            height={100}
+            className="w-[200px]"
+          />
+
+        </div>
+      </div>
+      <div className="absolute bottom-10 md:left-[400]  z-0 ">
         <motion.img initial={{ y: -20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 0.1 }}
 
           src="/animationLogo.png"
@@ -175,29 +201,8 @@ export default function Hero() {
           className="w-[200px]"
         />
       </div>
-      <div className="absolute top-0 right-[100] z-50">
-        <motion.img initial={{ y: -20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 0.1 }}
 
-          src="/animationLogo.png"
-          alt="Kangkong Chips"
-          width={100}
-          height={100}
-          className="w-[200px]"
-        />
-      </div>
-
-      <div className="absolute bottom-10 left-[400] z-50">
-        <motion.img initial={{ y: -20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 0.1 }}
-
-          src="/animationLogo.png"
-          alt="Kangkong Chips"
-          width={100}
-          height={100}
-          className="w-[200px]"
-        />
-      </div>
-
-      <div className="absolute top-0 left-[400] z-0">
+      <div className="absolute top-0 md:left-[400] z-0  ">
         <motion.img initial={{ y: 0, opacity: 0 }} whileInView={{ y: 20, opacity: 1 }} transition={{ duration: 1, delay: 0.1 }}
 
           src="/animationLogo.png"
