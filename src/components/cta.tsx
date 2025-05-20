@@ -135,7 +135,7 @@ export default function ElegantCta() {
       {/* Animated background pattern */}
       <motion.div
         className="absolute inset-0 bg-[radial-gradient(circle,_rgba(255,255,255,0.1)_1px,_transparent_1px)] bg-[length:20px_20px]"
-        variants={backgroundPatternVariants}
+        variants="reverse"
         initial="initial"
         animate="animate"
       />
